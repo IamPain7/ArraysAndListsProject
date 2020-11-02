@@ -34,22 +34,37 @@ namespace ArraysAndLists
                 if (num % 2 == 0)
                 {
                     evens.Add(num);
+                    Console.WriteLine($"Its odd");
 
 
                 }
-                else if (num % 0 != 10)
+                else 
                 {
                     odds.Add(num);
+                    Console.WriteLine($"It is even");
+             
 
                 }
 
-                else
+                /* Now using foeach or for loops,
+           * display each List of even and odd numbers
+           *
+           * Try to be creative in your display
+           */
+
+                foreach (var msg in odds)
                 {
 
-                    Console.WriteLine("You need a cup of coffee ");
+                    Console.WriteLine($"{msg} is an odd number");
 
                 }
+                foreach(var info in evens)
+                {
 
+                    Console.WriteLine($"{ evens} is even number");
+
+
+                }
             }
 
 
@@ -70,9 +85,5 @@ namespace ArraysAndLists
 
             }
 
-            /* Now using foeach or for loops,
-             * display each List of even and odd numbers
-             *
-             * Try to be creative in your display
-             */
+          
         }
